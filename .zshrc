@@ -82,30 +82,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#every login ask for the passphrase
-#
-#alisas of fabi kvm dev env
-alias jumpfabi="ssh kevin@proxima.pmind.de"
-
-#alias of berhands lxd dev env
-alias bglxd="ssh root@148.251.108.100"
-
-
-#Add GOPATH for using go build/install
-export GOARCH="amd64"
-export GOBIN=""
-export GOEXE=""
-export GOHOSTARCH="amd64"
-export GOHOSTOS="linux"
-export GOOS="linux"
-#export GOPATH="/home/kevin/GoglandProjects/tantumES"
-export GORACE=""
-export GOROOT="/usr/lib/go-1.8"
-export GOTOOLDIR="/usr/lib/go-1.8/pkg/tool/linux_amd64"
-export GO15VENDOREXPERIMENT="1"
-export CC="gcc"
-export GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0"
-export CXX="g++"
-export CGO_ENABLED="1"
-export PATH=$PATH:/home/kevin/golang/bin/
