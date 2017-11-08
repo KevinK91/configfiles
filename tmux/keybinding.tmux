@@ -21,9 +21,6 @@
 # Add F12 to the prefix list
 set -g prefix F12
 
-# Clear the slate
-source $BYOBU_PREFIX/share/byobu/keybindings/f-keys.tmux.disable
-
 # Byobu's Keybindings
 # Documented in: $BYOBU_PREFIX/share/doc/byobu/help.tmux.txt
 bind-key -n F1 new-window -k -n config byobu-config
@@ -34,10 +31,10 @@ bind-key -n C-S-F2 new-session
 
 bind-key -n F3 previous-window
 bind-key -n F4 next-window
-bind-key -n M-Left previous-window
-bind-key -n M-Right next-window
-bind-key -n M-Up switch-client -p
-bind-key -n M-Down switch-client -n
+bind-key -n M-C-Left previous-window
+bind-key -n M-C-Right next-window
+bind-key -n M-C-Up switch-client -p
+bind-key -n M-C-Down switch-client -n
 bind-key -n S-F3 display-panes \; select-pane -t :.-
 bind-key -n S-F4 display-panes \; select-pane -t :.+
 bind-key -n S-Up display-panes \; select-pane -U
@@ -97,10 +94,10 @@ bind-key -n C-v display-panes \; split-window -h -c "#{pane_current_path}"
 bind-key -n C-h display-panes \; split-window -v -c "#{pane_current_path}"
 bind-key -n C-s new-session
 
-bind-key -n S-Up display-panes \; select-pane -U
-bind-key -n S-Down display-panes \; select-pane -D
-bind-key -n S-Left display-panes \; select-pane -L
-bind-key -n S-Right display-panes \; select-pane -R
+bind-key -n M-Up display-panes \; select-pane -U
+bind-key -n M-Down display-panes \; select-pane -D
+bind-key -n M-Left display-panes \; select-pane -L
+bind-key -n M-Right display-panes \; select-pane -R
 bind-key -n C-S-Right display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
 bind-key -n C-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
 
