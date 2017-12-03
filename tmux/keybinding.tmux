@@ -101,7 +101,13 @@ bind-key -n M-Right display-panes \; select-pane -R
 bind-key -n C-S-Right display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
 bind-key -n C-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
 
+
 bind-key -n M-NPage copy-mode \; send-keys NPage
 bind-key -n M-PPage copy-mode \; send-keys PPage
 bind-key -n C-Space resize-pane -Z
 
+#only rlevant for linux mint
+bind-key -n M-S-Left previous-window
+bind-key -n M-S-Right next-window
+bind-key -n M-S-Up switch-client -p
+bind-key -n M-S-Down switch-client -n
