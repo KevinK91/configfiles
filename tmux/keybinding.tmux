@@ -103,3 +103,5 @@ bind-key -n C-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :
 
 bind-key -n M-NPage copy-mode \; send-keys NPage
 bind-key -n M-PPage copy-mode \; send-keys PPage
+bind-key -n C-Space resize-pane -Z
+
