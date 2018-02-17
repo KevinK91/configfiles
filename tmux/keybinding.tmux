@@ -98,8 +98,16 @@ bind-key -n M-Up display-panes \; select-pane -U
 bind-key -n M-Down display-panes \; select-pane -D
 bind-key -n M-Left display-panes \; select-pane -L
 bind-key -n M-Right display-panes \; select-pane -R
-bind-key -n C-S-Right display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
-bind-key -n C-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
+
+#Windows
+#bind-key -n C-S-Right display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
+#bind-key -n C-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
+
+#Linux
+bind-key -n M-S-Right display-panes \; swap-pane -s :. -t :.- \; select-pane -t :.-
+bind-key -n M-S-Left display-panes \; swap-pane -s :. -t :.+ \; select-pane -t :.+
 
 bind-key -n M-NPage copy-mode \; send-keys NPage
 bind-key -n M-PPage copy-mode \; send-keys PPage
+bind-key -n C-Space resize-pane -Z
+
